@@ -68,6 +68,12 @@
       "relation": "oneToMany",
       "target": "api::session.session",
       "mappedBy": "user"
+    },
+    "exercices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercice.exercice",
+      "mappedBy": "user"
     }
   }
 }
