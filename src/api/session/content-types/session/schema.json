@@ -4,7 +4,8 @@
   "info": {
     "singularName": "session",
     "pluralName": "sessions",
-    "displayName": "Sessions"
+    "displayName": "Sessions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -29,6 +30,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "exercice": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exercice.exercice",
+      "inversedBy": "sessions"
     }
   }
 }

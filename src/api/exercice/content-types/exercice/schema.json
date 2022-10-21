@@ -26,6 +26,12 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::session.session",
+      "mappedBy": "exercice"
     }
   }
 }
