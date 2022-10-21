@@ -4,7 +4,8 @@
   "info": {
     "singularName": "exercice",
     "pluralName": "exercices",
-    "displayName": "Exercices"
+    "displayName": "Exercices",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,11 +28,11 @@
       "type": "uid",
       "targetField": "name"
     },
-    "sessions": {
+    "session": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::session.session",
-      "mappedBy": "exercice"
+      "inversedBy": "exercices"
     }
   }
 }

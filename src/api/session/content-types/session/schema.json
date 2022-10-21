@@ -31,11 +31,11 @@
       "type": "uid",
       "targetField": "name"
     },
-    "exercice": {
+    "exercices": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::exercice.exercice",
-      "inversedBy": "sessions"
+      "mappedBy": "session"
     }
   }
 }
